@@ -1,23 +1,22 @@
-# `@hackclub/icons`
+# Supercons
 
-Hack Club’s icons are a superset of [Spectrum](https://spectrum.chat)’s incredible collection (also published as [`spectrum-icons`](https://github.com/lachlanjc/spectrum-icons)). Designed for use with our [Design System](https://github.com/hackclub/design-system).
+Hack Club’s icons are a superset of [Spectrum](https://spectrum.chat)’s incredible collection (also published as [`spectrum-icons`](https://github.com/lachlanjc/spectrum-icons)).
 
-[See them all](https://hackclub-icons.now.sh)
+[See them all](https://supercons.vercel.app)
 
 ## Usage
 
 ```sh
-npm i @hackclub/icons
+npm i supercons
 ```
 
 ```js
 import React from 'react'
-import Icon from '@hackclub/icons'
+import Icon from 'supercons'
 
 export default () => (
   <div style={{ color: 'cyan' }}>
-    <Icon glyph="clubs" size={128} />
-    <Icon glyph="bank-circle" size={64} />
+    <Icon glyph="like" size={128} />
     <Icon glyph="leaders" size={32} />
   </div>
 )
@@ -28,7 +27,7 @@ export default () => (
 1. Clone & enter the repo.
 
 ```sh
-$ git clone https://github.com/hackclub/icons.git
+$ git clone https://github.com/lachlanjc/supercons.git
 $ cd icons
 ```
 

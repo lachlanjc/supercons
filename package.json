@@ -1,40 +1,38 @@
 {
-  "name": "@hackclub/icons",
-  "version": "0.0.6",
-  "description": "Hack Club’s iconset, a superset of spectrum-icons",
+  "name": "supercons",
+  "version": "0.0.1",
+  "description": "A playful React iconset, inspired by Hack Club + Spectrum",
   "main": "dist/index.js",
   "keywords": [
     "icon",
     "react"
   ],
-  "author": "Lachlan Campbell <lachlan@hackclub.com>",
+  "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
     "build": "next build",
     "dev": "next",
     "prepare": "tsc && babel src/index.tsx --extensions .tsx --out-dir dist --presets @babel/env,@babel/react,@babel/typescript"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^16.12.0 || ^17.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
-    "@types/prop-types": "^15.7.3",
     "@types/react": "^17.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "typescript": "^4.1.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackclub/icons.git"
+    "url": "git+https://github.com/lachlanjc/supercons.git"
   },
   "bugs": {
-    "url": "https://github.com/hackclub/icons/issues"
+    "url": "https://github.com/lachlanjc/supercons/issues"
   },
-  "homepage": "https://icons.hackclub.com"
+  "homepage": "https://supercons.vercel.app"
 }

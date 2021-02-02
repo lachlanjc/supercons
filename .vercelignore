@@ -1,3 +1,2 @@
-svg/
 dist/
-.next/
+prettier.config.js

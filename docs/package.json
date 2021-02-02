@@ -1,16 +1,18 @@
 {
-  "name": "@hackclub/icons-docs",
+  "name": "@lachlanjc/supercons-docs",
   "version": "0.0.1",
+  "private": true,
+  "homepage": "https://supercons.vercel.app",
+  "license": "MIT",
+  "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next"
   },
-  "author": "Lachlan Campbell <lachlan@hackclub.com>",
-  "license": "MIT",
   "dependencies": {
-    "@hackclub/icons": "latest",
-    "next": "^10.0.0",
+    "supercons": "file:../",
+    "next": "^10.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
