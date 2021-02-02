@@ -1,0 +1,7 @@
+*
+!dist
+!src
+!package.json
+!yarn.lock
+!README.md
+!LICENSE
