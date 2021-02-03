@@ -80,7 +80,7 @@ const Docs = () => {
             .sort()
             .filter(n => (search !== '' ? n.includes(search) : true))
             .map(key => (
-              <div key={key}>
+              <div key={key} id={key}>
                 <Icon glyph={key} title={key} size={48} />
                 <p children={key} />
               </div>
