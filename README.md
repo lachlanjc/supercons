@@ -1,13 +1,18 @@
 # Supercons
 
-Hack Club’s icons are a superset of [Spectrum](https://spectrum.chat)’s incredible collection (also published as [`spectrum-icons`](https://github.com/lachlanjc/spectrum-icons)).
+A friendly set of open source React icons.
 
-[See them all](https://supercons.vercel.app)
+[→ **Preview & search the iconset**](https://supercons.vercel.app)
+
+Predecessor projects: [spectrum-icons](https://github.com/lachlanjc/spectrum-icons), [@hackclub/icons](https://github.com/hackclub/icons)
+
+![Banner with fun styling of Supercons](https://cloud-l7ijxkyvg.vercel.app/2021-02-02_21010z8cwfunpdn3jp59d7np4z6q5kdj.png)
 
 ## Usage
 
 ```sh
-npm i supercons
+yarn add supercons
+# npm i supercons
 ```
 
 ```js
@@ -22,7 +27,7 @@ export default () => (
 )
 ```
 
-## Development Setup
+## Development setup
 
 1. Clone & enter the repo.
 
@@ -48,3 +53,10 @@ yarn run prepare
 ```sh
 yarn run dev
 ```
+
+## To-do list
+
+- [x] Drop PropTypes for TypeScript (thanks [@anirudhb](https://github.com/anirudhb)!)
+- [ ] Try using Microbundle for build?
+- [ ] Forward refs (with proper TypeScript support)
+- [ ] Allow tree-shaking by generating a component for each icon

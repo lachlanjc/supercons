@@ -1,7 +1,7 @@
 {
   "name": "supercons",
   "version": "0.0.1",
-  "description": "A playful React iconset, inspired by Hack Club + Spectrum",
+  "description": "A friendly React iconset",
   "main": "dist/index.js",
   "keywords": [
     "icon",
@@ -9,8 +9,8 @@
   ],
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
-    "build": "next build",
-    "dev": "next",
+    "build": "yarn prepare && cd docs && next build",
+    "dev": "cd docs && next",
     "prepare": "tsc && babel src/index.tsx --extensions .tsx --out-dir dist --presets @babel/env,@babel/react,@babel/typescript"
   },
   "peerDependencies": {
