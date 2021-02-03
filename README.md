@@ -22,9 +22,9 @@ import React from 'react'
 import Icon from 'supercons'
 
 export default () => (
-  <div style={{ color: 'cyan' }}>
+  <div style={{ color: 'magenta' }}>
     <Icon glyph="like" size={128} />
-    <Icon glyph="leaders" size={32} />
+    <Icon glyph="cloud" size={32} />
   </div>
 )
 ```
@@ -62,4 +62,4 @@ yarn run dev
 - [ ] Try using Microbundle for build?
 - [ ] Add more icons
 - [ ] Forward refs (with proper TypeScript support)
-- [ ] Allow tree-shaking by generating a component for each icon
+- [ ] Allow tree-shaking by programatically generating a component for each icon

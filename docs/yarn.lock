@@ -110,9 +110,6 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.0.tgz#6c9eafc78c1529248f8f4d92b0799a712b6052c6"
   integrity sha512-i9YbZPN3QgfighY/1X1Pu118VUz2Fmmhd6b2n0/O8YVgGGfw0FbUYoA97k7FkpGJ+pLCFEDLUmAPPV4D1kpeFw==
 
-"@lachlanjc/supercons@file:..":
-  version "0.0.1"
-
 "@next/env@10.0.6":
   version "10.0.6"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-10.0.6.tgz#e3c845491a8b0fffda219b5bda84b361b8b2f9c2"
@@ -1992,6 +1989,11 @@ stylis@3.5.4:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.4.tgz#f665f25f5e299cf3d64654ab949a57c768b73fbe"
   integrity sha512-8/3pSmthWM7lsPBKv7NXkzn2Uc9W7NotcwGNpJaa3k7WMM1XDCA4MgT5k/8BIexd5ydZdboXtU90XH9Ec4Bv/Q==
+
+supercons@latest:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/supercons/-/supercons-0.0.1.tgz#b016f843ec930e30889dff01bdd5086398bbb4bd"
+  integrity sha512-ET70X83boPmv8ze9r5CuGXJCBZ9mbQ32RgE1CIwOX4K2hv9yA9mu8mtkt52VKER1PDZFSf5v/+9neLD5d1bFCQ==
 
 supports-color@^5.3.0:
   version "5.5.0"
