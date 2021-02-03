@@ -5,7 +5,10 @@ import BG from '../components/bg'
 import useFocusable from '../components/use-focusable'
 
 const title = 'Supercons'
-const description = 'React component'
+const description =
+  'A friendly, open source React iconset. Download supercons icons on npm.'
+const image =
+  'https://cloud-l7ijxkyvg.vercel.app/2021-02-02_21010z8cwfunpdn3jp59d7np4z6q5kdj.png'
 
 const Docs = () => {
   const input = useRef(null)
@@ -24,6 +27,9 @@ const Docs = () => {
         <meta name="description" content={description} />
         <meta property="og:description" content={description} />
         <meta name="twitter:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={image} />
       </Head>
       <BG />
       <main>
@@ -43,7 +49,7 @@ const Docs = () => {
             type="search"
             onChange={e => setSearch(e.target.value)}
             value={search}
-            placeholder="press / to focus"
+            placeholder="Filter – / to focus"
             ref={input}
           />
         </header>
@@ -105,7 +111,7 @@ const Docs = () => {
             -webkit-text-stroke: #e635ce;
             -webkit-text-stroke-width: 2px;
             -webkit-text-fill-color: #fff;
-            text-shadow: 4px 4px 12px currentColor;
+            text-shadow: 4px 4px 9px currentColor;
           }
           @media (min-width: 32em) {
             h1 {
@@ -115,6 +121,7 @@ const Docs = () => {
           @media (prefers-color-scheme: dark) {
             h1 {
               -webkit-text-fill-color: #1d1d1f;
+              text-shadow: 2px 2px 8px currentColor;
             }
           }
         }
@@ -148,13 +155,26 @@ const Docs = () => {
         }
         input {
           appearance: none;
-          font-family: inherit;
-          font-size: 18px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+          font-size: 16px;
+          width: 100%;
+          max-width: 384px;
+          text-align: center;
           border-radius: 999px;
           padding: 0.5rem 1rem;
-          border: 2px solid #ff9300;
+          border: 2px solid #6bf;
           background-color: rgba(255, 255, 255, 0.625);
           margin-top: 2rem;
+          transition: 0.125s ease-out;
+          transition-property: border-color, box-shadow;
+        }
+        input:hover {
+          box-shadow: 0 0 6px #2997ff;
+        }
+        input:focus {
+          outline: none;
+          border-color: #2997ff;
+          box-shadow: 0 0 12px #2997ff;
         }
         article {
           margin-top: 1rem;
@@ -208,6 +228,7 @@ const Docs = () => {
           }
           input {
             background-color: rgba(255, 255, 255, 0.125);
+            color: #fff;
           }
         }
       `}</style>
