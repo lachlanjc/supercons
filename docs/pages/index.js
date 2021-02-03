@@ -30,6 +30,27 @@ const Docs = () => {
         <meta property="og:image" content={image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={image} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e635ce" />
+        <meta name="msapplication-TileColor" content="#e635ce" />
+        <meta name="theme-color" content="#e635ce" />
       </Head>
       <BG />
       <main>
@@ -49,7 +70,8 @@ const Docs = () => {
             type="search"
             onChange={e => setSearch(e.target.value)}
             value={search}
-            placeholder="Filter – / to focus"
+            placeholder="Filter… / to focus"
+            aria-label="Filter icons"
             ref={input}
           />
         </header>

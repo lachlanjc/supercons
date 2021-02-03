@@ -7,7 +7,7 @@
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
     "dev": "next",
-    "build": "cd .. && yarn prepare && cd docs && next build",
+    "build": "next build",
     "start": "next"
   },
   "dependencies": {
