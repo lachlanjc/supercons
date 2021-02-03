@@ -6,7 +6,7 @@ import useFocusable from '../components/use-focusable'
 
 const title = 'Supercons'
 const description =
-  'A friendly, open source React iconset. Download supercons icons on npm.'
+  'A friendly open source React iconset. Download supercons icons on npm.'
 const image =
   'https://cloud-l7ijxkyvg.vercel.app/2021-02-02_21010z8cwfunpdn3jp59d7np4z6q5kdj.png'
 
@@ -56,6 +56,7 @@ const Docs = () => {
       <main>
         <header>
           <h1>Supercons</h1>
+          <h2>A friendly, open source React iconset</h2>
           <nav>
             <a href="https://github.com/lachlanjc/supercons">
               <Icon glyph="github" size={32} />
@@ -126,7 +127,11 @@ const Docs = () => {
           font-style: italic;
           line-height: 1;
           margin: 0;
-          padding: 1rem 0 2rem;
+          padding: 1rem 0;
+        }
+        h2 {
+          color: #622aff;
+          font-size: 1.5rem;
         }
         @supports (-webkit-text-fill-color: transparent) {
           h1 {
@@ -245,6 +250,9 @@ const Docs = () => {
           }
         }
         @media (prefers-color-scheme: dark) {
+          h2 {
+            color: #6bf;
+          }
           article p {
             color: #a1a1a6;
           }
