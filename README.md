@@ -4,6 +4,8 @@ A friendly set of open source React icons.
 
 [→ **Preview & search the iconset**](https://supercons.vercel.app)
 
+Massive credit to [@superbryntendo](https://github.com/superbryntendo) for the original set of icons & aesthetic inspiration.
+
 Predecessor projects: [spectrum-icons](https://github.com/lachlanjc/spectrum-icons), [@hackclub/icons](https://github.com/hackclub/icons)
 
 ![Banner with fun styling of Supercons](https://cloud-l7ijxkyvg.vercel.app/2021-02-02_21010z8cwfunpdn3jp59d7np4z6q5kdj.png)
@@ -33,7 +35,7 @@ export default () => (
 
 ```sh
 $ git clone https://github.com/lachlanjc/supercons.git
-$ cd icons
+$ cd supercons
 ```
 
 2. Install dependencies.
@@ -58,5 +60,6 @@ yarn run dev
 
 - [x] Drop PropTypes for TypeScript (thanks [@anirudhb](https://github.com/anirudhb)!)
 - [ ] Try using Microbundle for build?
+- [ ] Add more icons
 - [ ] Forward refs (with proper TypeScript support)
 - [ ] Allow tree-shaking by generating a component for each icon
