@@ -3,7 +3,7 @@
     "alwaysStrict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "jsx": "preserve",
     "lib": [
       "ES2017"
@@ -17,9 +17,14 @@
     "outDir": "./dist",
     "skipLibCheck": true,
     "strict": true,
+    "noImplicitAny": false,
+    "types": [
+      "node"
+    ]
   },
   "include": [
-    "src/**.ts",
+    "src/index.ts",
     "src/**.tsx",
+    "generate.ts",
   ]
 }

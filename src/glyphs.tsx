@@ -1,6 +1,4 @@
-import React from 'react'
-
-export const glyphs = {
+const glyphs = {
   alarm: (
     <g>
       <path d="M14.6397 16.0006C14.6397 16.0008 14.6397 16.0004 14.6397 16.0006V8.99999C14.6397 8.44799 15.0877 7.99999 15.6397 7.99999C16.1917 7.99999 16.6397 8.44799 16.6397 8.99999V15.4248L21.3359 18.1362C21.814 18.4122 21.978 19.0242 21.702 19.5022C21.426 19.9803 20.814 20.1442 20.3359 19.8682L15.1398 16.8682C14.819 16.683 14.6396 16.3465 14.6397 16.0006Z" />
@@ -1053,37 +1051,6 @@ export const glyphs = {
   ),
 }
 
+export default glyphs
+
 export const glyphNames = Object.keys(glyphs)
-
-type Props<T> = {
-  as?: Function | T | string
-  glyph?: keyof typeof glyphs
-  size?: number
-}
-
-function Icon<T extends React.ElementType = 'svg'>({
-  as: Component = 'svg',
-  size = 32,
-  glyph = 'like',
-  ...props
-}: Props<T> & React.ComponentPropsWithoutRef<T>) {
-  return (
-    <Component
-      fillRule="evenodd"
-      clipRule="evenodd"
-      strokeLinejoin="round"
-      strokeMiterlimit="1.414"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label={glyph}
-      viewBox="0 0 32 32"
-      preserveAspectRatio="xMidYMid meet"
-      fill="currentColor"
-      width={size}
-      height={size}
-      children={glyphs[glyph as keyof typeof glyphs]}
-      {...props}
-    />
-  )
-}
-
-export default Icon

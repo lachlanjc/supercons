@@ -4,3 +4,7 @@ node_modules/
 .next/
 .vercel/
 yarn-error.log
+generate.js
+src/index.ts
+src/**.js
+src/components/
