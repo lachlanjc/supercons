@@ -2,7 +2,9 @@
 
 A friendly set of open source React icons.
 
-[→ **Preview & search the iconset**](https://supercons.vercel.app)
+[→ **Preview & search the iconset**][docs]
+
+[docs]: https://supercons.vercel.app
 
 Massive credit to [@superbryntendo](https://github.com/superbryntendo) for the original set of icons & aesthetic inspiration.
 
@@ -28,6 +30,16 @@ export default () => (
   </div>
 )
 ```
+
+Built with/supports TypeScript.
+
+### Props
+
+| Prop    | Type             | Default | Details               |
+| ------- | ---------------- | ------- | --------------------- |
+| `glyph` | String, required | `like`  | See [docs]            |
+| `size`  | Number or string | `32px`  | Sets width & height   |
+| `as`    | React component  | `svg`   | Must render `svg` tag |
 
 ## Development setup
 

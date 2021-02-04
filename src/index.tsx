@@ -1048,7 +1048,7 @@ type Props<T> = {
 }
 
 function Icon<T extends React.ElementType = 'svg'>({
-  is: Component = 'svg',
+  as: Component = 'svg',
   size = 32,
   glyph = 'like',
   ...props
