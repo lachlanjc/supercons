@@ -6,7 +6,7 @@ import useFocusable from '../components/use-focusable'
 
 const title = 'Supercons'
 const description =
-  'A friendly open source React iconset. Download supercons icons on npm.'
+  'A friendly open source React iconset by Lachlan Campbell. Download supercons icons on npm.'
 const image =
   'https://cloud-l7ijxkyvg.vercel.app/2021-02-02_21010z8cwfunpdn3jp59d7np4z6q5kdj.png'
 
@@ -69,6 +69,7 @@ const Docs = () => {
           </nav>
           <input
             type="search"
+            autoCapitalize={false}
             onChange={e => setSearch(e.target.value)}
             value={search}
             placeholder="Filter… / to focus"
@@ -89,6 +90,13 @@ const Docs = () => {
               </div>
             ))}
         </article>
+        <footer>
+          Package, site, & most icons by{' '}
+          <a href="https://lachlanjc.com">@lachlanjc</a>, 2021.
+          <br />
+          Credit to <a href="https://bryn.io">@superbryntendo</a> for initial
+          group of icons.
+        </footer>
       </main>
       <style jsx global>{`
         body {
@@ -160,18 +168,23 @@ const Docs = () => {
         nav a {
           display: inline-flex;
           align-items: center;
-          color: #ff9300;
           font-size: 1.25rem;
-          font-weight: 700;
           margin: 0 1rem;
+        }
+        a {
+          color: #ff9300;
+          font-weight: 700;
           transition: 0.125s ease-out;
           transition-property: color, transform;
           text-underline-position: under;
           text-decoration-style: wavy;
         }
+        a:hover,
+        a:focus {
+          color: #ff5236;
+        }
         nav a:hover,
         nav a:focus {
-          color: #ff5236;
           transform: rotate(-2deg) scale(1.25);
         }
         nav a:hover :global(svg),
@@ -228,6 +241,12 @@ const Docs = () => {
           fill: #ff9300;
           transform: scale(2);
         }
+        footer {
+          padding: 2rem 1rem;
+          color: #6e6e73;
+          font-size: 1.125rem;
+          line-height: 1.625;
+        }
         @media (min-width: 32em) {
           h1 {
             font-size: 4rem;
@@ -255,7 +274,8 @@ const Docs = () => {
           h2 {
             color: #6bf;
           }
-          article p {
+          article p,
+          footer {
             color: #a1a1a6;
           }
           input {
