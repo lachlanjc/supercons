@@ -1042,7 +1042,7 @@ export const glyphs = {
 export const glyphNames = Object.keys(glyphs)
 
 type Props<T> = {
-  is?: Function | T | string
+  as?: Function | T | string
   glyph?: keyof typeof glyphs
   size?: number
 }
