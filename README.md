@@ -38,8 +38,10 @@ Built with/supports TypeScript.
 | Prop    | Type             | Default | Details               |
 | ------- | ---------------- | ------- | --------------------- |
 | `glyph` | String, required | `like`  | See [docs]            |
-| `size`  | Number or string | `32px`  | Sets width & height   |
+| `size`  | Number or string | `32`    | Sets width & height   |
 | `as`    | React component  | `svg`   | Must render `svg` tag |
+
+You can also pass any other props. Remember to make your icons accessible with `aria-label` or `title`, use `aria-hidden` if they’re purely decorative, etc.
 
 ## Development setup
 
