@@ -2,6 +2,7 @@
   "name": "supercons",
   "version": "0.0.1",
   "description": "A friendly React iconset",
+  "source": "src/index.ts",
   "main": "dist/index.js",
   "keywords": [
     "icon",
@@ -9,20 +10,15 @@
   ],
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
-    "build": "yarn prepare && cd docs && next build",
-    "dev": "cd docs && next",
-    "prepare": "tsc && babel src/index.tsx --extensions .tsx --out-dir dist --presets @babel/env,@babel/react,@babel/typescript"
+    "dev": "yarn run prepare && yarn link && cd docs && yarn link supercons && next",
+    "prepare": "microbundle --jsx React.createElement"
   },
   "peerDependencies": {
     "react": "^16.12.0 || ^17.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "@babel/preset-typescript": "^7.12.7",
     "@types/react": "^17.0.0",
+    "microbundle": "^0.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "typescript": "^4.1.3"

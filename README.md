@@ -58,22 +58,22 @@ $ cd supercons
 $ yarn
 ```
 
-3. Build library.
-
-```sh
-yarn run prepare
-```
-
 4. Run docs locally.
 
 ```sh
 yarn run dev
 ```
 
+4. After making changes to icons, build the library.
+
+```sh
+yarn run prepare
+```
+
 ## To-do list
 
 - [x] Drop PropTypes for TypeScript (thanks [@anirudhb](https://github.com/anirudhb)!)
-- [ ] Try using Microbundle for build?
-- [ ] Add more icons
-- [ ] Forward refs (with proper TypeScript support)
+- [x] Use [Microbundle](https://github.com/developit/microbundle) for build
 - [ ] Allow tree-shaking by programatically generating a component for each icon
+- [ ] Forward refs (with proper TypeScript support)
+- [ ] Add more icons
