@@ -1,8 +1,10 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useCallback } from 'react'
 import Head from 'next/head'
 import Icon, { glyphNames } from 'supercons'
 import BG from '../components/bg'
 import useFocusable from '../components/use-focusable'
+import { useClipboard } from 'use-clipboard-copy'
+import toast, { Toaster } from 'react-hot-toast'
 
 const title = 'Supercons'
 const description =
@@ -14,6 +16,23 @@ const Docs = () => {
   const input = useRef(null)
   const [search, setSearch] = useState('')
   useFocusable(input)
+  const clipboard = useClipboard()
+  function copyToClipboard(text){
+    toast.dismiss()
+    clipboard.copy(text)
+    toast.success('Copied!', {
+      style: {
+        border: '0px solid #713200',
+        padding: '16px',
+        color: '#6bf',
+        fontWeight: '600',
+        background: '#1d1d1f',
+        boxShadow: '4px 4px 64px #e635ce',
+        borderRadius: '20px'
+      },
+      icon: <Icon glyph='post-fill' size={24} />
+    });
+  }
 
   return (
     <>
@@ -85,11 +104,12 @@ const Docs = () => {
             )
             .map(key => (
               <div key={key} id={key}>
-                <Icon glyph={key} title={key} size={48} />
+                <Icon glyph={key} title={key} size={48} onClick={() => copyToClipboard(key)} />
                 <p children={key} />
               </div>
             ))}
         </article>
+        <Toaster position="bottom-right"/>
         <footer>
           Package, site, & most icons by{' '}
           <a href="https://lachlanjc.com">@lachlanjc</a>, 2021.
@@ -114,6 +134,7 @@ const Docs = () => {
           }
           article svg {
             fill: #fff;
+            cursor: pointer;
           }
           article svg:hover {
             fill: #34b4a7 !important;
