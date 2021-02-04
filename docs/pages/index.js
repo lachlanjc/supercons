@@ -79,7 +79,9 @@ const Docs = () => {
         <article>
           {glyphNames
             .sort()
-            .filter(n => (search !== '' ? n.includes(search) : true))
+            .filter(n =>
+              search !== '' ? n.includes(search.toLowerCase()) : true,
+            )
             .map(key => (
               <div key={key} id={key}>
                 <Icon glyph={key} title={key} size={48} />
