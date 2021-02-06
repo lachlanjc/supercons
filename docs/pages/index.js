@@ -22,15 +22,15 @@ const Docs = () => {
     clipboard.copy(text)
     toast.success('Copied!', {
       style: {
-        border: '0px solid #713200',
-        padding: '16px',
+        border: 0,
+        padding: '1rem',
         color: '#6bf',
-        fontWeight: '600',
+        fontWeight: 600,
         background: '#1d1d1f',
         boxShadow: '4px 4px 64px #e635ce',
         borderRadius: '20px'
       },
-      icon: <Icon glyph='post-fill' size={24} />
+      icon: <Icon glyph='copy-check' size={24} />
     });
   }
 
@@ -111,6 +111,8 @@ const Docs = () => {
         </article>
         <Toaster position="bottom-right"/>
         <footer>
+          Tap to copy an icon name.
+          <br />
           Package, site, & most icons by{' '}
           <a href="https://lachlanjc.com">@lachlanjc</a>, 2021.
           <br />
@@ -134,7 +136,6 @@ const Docs = () => {
           }
           article svg {
             fill: #fff;
-            cursor: pointer;
           }
           article svg:hover {
             fill: #34b4a7 !important;
@@ -245,6 +246,9 @@ const Docs = () => {
           grid-row-gap: 0.5rem;
           grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
           justify-content: center;
+        }
+        article div {
+          cursor: pointer;
         }
         p {
           color: #6e6e73;
