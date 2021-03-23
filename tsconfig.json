@@ -1,25 +1,29 @@
 {
-    "compilerOptions": {
-      "alwaysStrict": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "isolatedModules": true,
-      "jsx": "preserve",
-      "lib": [
-        "ES2017"
-      ],
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "emitDeclarationOnly": true,
-      "declaration": true,
-      "declarationMap": true,
-      "outDir": "./dist",
-      "skipLibCheck": true,
-      "strict": true,
-      "target": "ES2017"
-    },
-    "include": [
-      "src/**.ts",
-      "src/**.tsx",
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "jsx": "preserve",
+    "lib": [
+      "ES2017"
+    ],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "types": [
+      "node"
     ]
-  }
+  },
+  "include": [
+    "src/index.ts",
+    "src/**.tsx",
+    "generate.ts",
+  ]
+}
