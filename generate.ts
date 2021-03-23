@@ -1,7 +1,19 @@
-const glyphs = require('./src/glyphs').default
+const path = require('path')
 const fs = require('fs')
+const glyphs = require('./src/glyphs').default
 // const { renderToStaticMarkup: dom } = require('react-dom/server')
 const jsxToString = require('jsx-to-string')
+
+// make those folders
+const rootDir = path.join(__dirname)
+const srcDir = path.join(rootDir, 'src')
+const iconsDir = path.join(rootDir, 'src/icons')
+const distDir = path.join(rootDir, 'dist')
+const componentsDir = path.join(rootDir, 'dist/components')
+
+if (!fs.existsSync(iconsDir)) fs.mkdirSync(iconsDir)
+if (!fs.existsSync(distDir)) fs.mkdirSync(distDir)
+if (!fs.existsSync(componentsDir)) fs.mkdirSync(componentsDir)
 
 const glyphNames = Object.keys(glyphs)
 const componentize = (key: string): string =>
@@ -51,9 +63,9 @@ export default ${component}
 glyphNames.forEach((key: string) => {
   const name = componentize(key)
   const children = jsxToString(glyphs[key])
-  const file = generateComponent(key, name, children)
-  fs.writeFile(`./src/components/${key}.tsx`, file, err => {
-    if (err) return console.error('ur a bad person :(', err)
+  const component = generateComponent(key, name, children)
+  fs.writeFileSync(`./src/components/${key}.tsx`, component, 'utf-8', err => {
+    if (err) return console.error(err)
   })
 })
 

@@ -10,13 +10,15 @@
   "sideEffects": false,
   "keywords": [
     "icon",
+    "icons",
+    "svg",
     "react"
   ],
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
     "dev": "yarn run prepare && yarn link && cd docs && yarn link supercons && next",
     "generate": "tsc {generate.ts,src/glyphs.tsx} --jsx react-jsx && node generate.js",
-    "prepare": "yarn run generate && microbundle --jsx React.createElement",
+    "prepare": "rm -rf dist && yarn run generate && microbundle --jsx React.createElement",
     "watch": "yarn run prepare && microbundle watch -jsx React.createElement --no-compress",
     "typecheck": "tsc"
   },
