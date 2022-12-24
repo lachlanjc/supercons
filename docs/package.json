@@ -6,16 +6,16 @@
   "license": "MIT",
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next"
   },
   "dependencies": {
-    "next": "^12.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-hot-toast": "^1.0.2",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
     "supercons": "latest",
-    "use-clipboard-copy": "^0.1.2"
+    "use-clipboard-copy": "^0.2.0"
   }
 }

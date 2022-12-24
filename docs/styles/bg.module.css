@@ -1,0 +1,40 @@
+.gradientWrapper {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.gradientOverlay {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: saturate(200%) blur(24px);
+  background-color: rgba(255, 255, 255, 0.875);
+  z-index: 10000;
+}
+
+@media (prefers-color-scheme: dark) {
+  .gradientOverlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: saturate(150%) blur(32px);
+  }
+}
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gradient svg {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}

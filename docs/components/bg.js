@@ -1,8 +1,10 @@
+import styles from '../styles/bg.module.css'
+
 // Adapted from https://pudding.cool/2020/12/judge-my-spotify/
 const BG = () => (
-  <div aria-hidden className="gradient-wrapper">
-    <div className="gradient-overlay" />
-    <div className="gradient">
+  <div aria-hidden className={styles.gradientWrapper}>
+    <div className={styles.gradientOverlay} />
+    <div className={styles.gradient}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 1024"
@@ -27,48 +29,6 @@ const BG = () => (
         <circle cx={1349} cy={1189} r={677} fill="#f56300" />
       </svg>
     </div>
-    <style jsx>{`
-      .gradient-wrapper {
-        position: fixed;
-        pointer-events: none;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100%;
-      }
-
-      .gradient-overlay {
-        height: 100%;
-        width: 100%;
-        backdrop-filter: saturate(200%) blur(24px);
-        background-color: rgba(255, 255, 255, 0.875);
-        z-index: 10000;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        .gradient-overlay {
-          background-color: rgba(0, 0, 0, 0.75);
-          backdrop-filter: saturate(150%) blur(32px);
-        }
-      }
-
-      .gradient {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
-
-      .gradient svg {
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        position: relative;
-      }
-    `}</style>
   </div>
 )
 
