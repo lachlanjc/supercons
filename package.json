@@ -1,9 +1,17 @@
 {
   "name": "supercons",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A friendly React iconset",
-  "source": "src/index.ts",
-  "main": "dist/index.js",
+  "type": "module",
+  "sideEffects": false,
+  "source": "./src/index.tsx",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
   "keywords": [
     "icon",
     "react"
@@ -11,17 +19,19 @@
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
     "dev": "yarn run prepare && yarn link && cd docs && yarn link supercons && next",
-    "prepare": "microbundle --jsx React.createElement"
+    "build:svg": "node scripts/generate-svg.mjs --experimental-modules",
+    "prepare": "microbundle --jsx React.createElement",
+    "watch": "microbundle watch --jsx React.createElement"
   },
   "peerDependencies": {
-    "react": "^16.12.0 || ^17.0.1"
+    "react": "^16.12.0 || ^17.0.1 || ^18.0.1"
   },
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "microbundle": "^0.13.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "typescript": "^4.1.3"
+    "@types/react": "^18.0.26",
+    "microbundle": "^0.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
   },
   "repository": {
     "type": "git",
