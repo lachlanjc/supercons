@@ -1,0 +1,56 @@
+# v0.1.0
+
+- Renamed
+  - `bolt` is now `bolt-stars`
+  - `card` prefixes are now `credit-card`
+  - `checkmark` is now `checkbox-checked`
+  - `mute` is now `bell-off`
+  - `notification` prefixes are now `bell`
+  - `terminal` is now `terminal-prompt`
+- Updated:
+  - `battery`, `battery-fill`, `battery-bolt`
+  - `bell-off`
+  - `bolt-stars`
+  - `history`
+  - `leader`
+  - `message-simple-new`
+  - `transactions`
+  - `transit`
+- New
+  - `battery-bolt-fill`, `battery-bolt-half-fill`
+  - `bed`
+  - `bell`, `bell-off`, `bell-off-fill`
+  - `broadcast`, `broadcast-pin`
+  - `camera`, `camera-fill`
+  - `capsule`
+  - `checklist`
+  - `compass-fill`
+  - `credit-card`, `credit-card-add`, `credit-card-transfer-in`, `credit-card-transfer-out`, `credit-card-star`, `credit-card-like`, `credit-card-check`,`credit-card-exclamation`, `credit-card-forbidden`
+  - `diagram-2`, `diagram-3`
+  - `dice`
+  - `email-new`, `email-move`, `email-check`, `email-exclamation`, `email-forbidden`, `email-liked`, `email-starred`, `email-bolted`
+  - `event-analytics`, `event-star`
+  - `fullscreen`, `fullscreen-exit`
+  - `grid-fill`, `grid-cols`, `grid-cols-fill`, `grid-rows`, `grid-rows-fill`, `grid-row-cols`, `grid-row-cols-fill`, `grid-col-rows`, `grid-col-rows-fill`
+  - `hdd`, `hdd-stack`, `hdd-rack`
+  - `headphones`, `headphones-fill`
+  - `hexagon`, `hexagon-fill`
+  - `mug`, `mug-fill`, `mug-hot, `mug-hot-fill`
+  - `notification`, `notification-fill`, `notification-off`, `notification-off-fill`
+  - `package`, `package-seam`
+  - `people-2`, `people-3`, `people-3-center`
+  - `person-badge`, `person-badge-fill`
+  - `photos`, `photos-fill`
+  - `pie-chart`, `pie-chart-fill`
+  - `play-circle`, `play-circle-fill`, `pause-circle`, `pause-circle-fill`
+  - `plus-slash-minus`
+  - `profile-add`, `profile-like`, `profile-star`, `profile-check`, `profile-exclamation`, `profile-forbidden`
+  - `rainbow`
+  - `rss-fill`
+  - `star`, `star-half`, `star-fill`
+  - `tent`, `tent-stars`
+  - `terminal-prompt`, `terminal`, `terminal-fill`, `terminal-add`, `terminal-add-fill`, `terminal-exclamation`, `terminal-exclamation-fill`, `terminal-forbidden`, `terminal-forbidden-fill`, `terminal-star`, `terminal-star-fill`, `terminal-check`, `terminal-check-fill`
+  - `thermometer`, `thermometer-low`, `thermometer-half`, `thermometer-fill`
+  - `transit`, `transit-rails`, `transit-bus`
+  - `tv-cast`, `tv-cast-fill`
+  - `wand`, `wand-stars`
