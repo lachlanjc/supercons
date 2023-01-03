@@ -2,7 +2,8 @@
 !dist
 !src
 !package.json
-!yarn.lock
+!pnpm-lock.yaml
 !README.md
 !LICENSE
 !tsconfig.json
+docs/
