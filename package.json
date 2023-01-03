@@ -5,32 +5,28 @@
   "type": "module",
   "sideEffects": false,
   "source": "./src/index.tsx",
-  "exports": {
-    "require": "./dist/index.cjs",
-    "default": "./dist/index.modern.js"
-  },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.module.js",
-  "unpkg": "./dist/index.umd.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "keywords": [
     "icon",
     "react"
   ],
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
-    "dev": "yarn run prepare && yarn link && cd docs && yarn link supercons && next",
-    "build:svg": "node scripts/generate-svg.mjs --experimental-modules",
-    "prepare": "microbundle --jsx React.createElement",
-    "watch": "microbundle watch --jsx React.createElement"
+    "build:components": "node scripts/generate-components.mjs",
+    "build:svg": "node scripts/generate-svg.mjs",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react"
   },
   "peerDependencies": {
-    "react": "^16.12.0 || ^17.0.1 || ^18.0.1"
+    "react": "^16.12.0 || ^17.0.1 || ^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
-    "microbundle": "^0.15.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tsup": "^6.5.0",
     "typescript": "^4.9.4"
   },
   "repository": {
@@ -40,5 +36,12 @@
   "bugs": {
     "url": "https://github.com/lachlanjc/supercons/issues"
   },
-  "homepage": "https://supercons.vercel.app"
+  "homepage": "https://supercons.vercel.app",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "avoid",
+    "printWidth": 80,
+    "semi": false
+  }
 }
