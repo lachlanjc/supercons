@@ -17,9 +17,11 @@
   - `transactions`
   - `transit`
 - New
+  - `app-store`, `app-store-fill`
   - `battery-bolt-fill`, `battery-bolt-half-fill`
   - `bed`
   - `bell`, `bell-off`, `bell-off-fill`
+  - `bluesky`, `bluesky-fill`
   - `broadcast`, `broadcast-pin`
   - `camera`, `camera-fill`
   - `capsule`
@@ -28,13 +30,16 @@
   - `credit-card`, `credit-card-add`, `credit-card-transfer-in`, `credit-card-transfer-out`, `credit-card-star`, `credit-card-like`, `credit-card-check`,`credit-card-exclamation`, `credit-card-forbidden`
   - `diagram-2`, `diagram-3`
   - `dice`
+  - `discord`, `discord-fill`
   - `email-new`, `email-move`, `email-check`, `email-exclamation`, `email-forbidden`, `email-liked`, `email-starred`, `email-bolted`
   - `event-analytics`, `event-star`
   - `fullscreen`, `fullscreen-exit`
   - `grid-fill`, `grid-cols`, `grid-cols-fill`, `grid-rows`, `grid-rows-fill`, `grid-row-cols`, `grid-row-cols-fill`, `grid-col-rows`, `grid-col-rows-fill`
+  - `group`
   - `hdd`, `hdd-stack`, `hdd-rack`
   - `headphones`, `headphones-fill`
   - `hexagon`, `hexagon-fill`
+  - `mastodon`, `mastodon-fill`
   - `mug`, `mug-fill`, `mug-hot, `mug-hot-fill`
   - `notification`, `notification-fill`, `notification-off`, `notification-off-fill`
   - `package`, `package-seam`
@@ -51,6 +56,9 @@
   - `tent`, `tent-stars`
   - `terminal-prompt`, `terminal`, `terminal-fill`, `terminal-add`, `terminal-add-fill`, `terminal-exclamation`, `terminal-exclamation-fill`, `terminal-forbidden`, `terminal-forbidden-fill`, `terminal-star`, `terminal-star-fill`, `terminal-check`, `terminal-check-fill`
   - `thermometer`, `thermometer-low`, `thermometer-half`, `thermometer-fill`
+  - `threads`, `threads-fill`
+  - `tiktok`, `tiktok-fill`
   - `transit`, `transit-rails`, `transit-bus`
   - `tv-cast`, `tv-cast-fill`
+  - `twitterx`, `twitterx-fill`
   - `wand`, `wand-stars`

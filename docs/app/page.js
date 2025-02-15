@@ -48,7 +48,7 @@ const Docs = () => {
           </nav>
           <input
             type="search"
-            autoCapitalize={false}
+            autoCapitalize="false"
             onChange={e => setSearch(e.target.value)}
             value={search}
             placeholder="Filter… / to focus"
