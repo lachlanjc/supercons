@@ -76,4 +76,4 @@ yarn run prepare
 - [x] Use [Microbundle](https://github.com/developit/microbundle) for build
 - [ ] Allow tree-shaking by programatically generating a component for each icon
 - [ ] Forward refs (with proper TypeScript support)
-- [ ] Add more icons
+- [x] Add more icons

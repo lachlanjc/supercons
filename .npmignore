@@ -1,9 +1,7 @@
 *
-!dist
+!dist/index.cjs
+!dist/index.js
+!dist/index.d.ts
 !src
-!package.json
 !bun.lock
-!README.md
-!LICENSE
 !tsconfig.json
-docs/

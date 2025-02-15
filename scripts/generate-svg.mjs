@@ -1,4 +1,4 @@
-import Icon, { glyphNames } from '../dist/index.mjs'
+import Icon, { glyphNames } from '../dist/index.js'
 import { renderToStaticMarkup } from 'react-dom/server'
 import fs from 'fs'
 
