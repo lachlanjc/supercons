@@ -1800,3 +1800,5 @@ export const glyphs = {
 }
 
 export const glyphNames = Object.keys(glyphs)
+
+export type GlyphName = keyof typeof glyphs
