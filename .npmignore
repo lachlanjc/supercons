@@ -1,7 +1,5 @@
-*
-!dist/index.cjs
-!dist/index.js
-!dist/index.d.ts
-!src
-!bun.lock
-!tsconfig.json
+.vercel/
+dist/svg/
+docs/
+scripts/
+.vercelignore
