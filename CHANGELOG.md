@@ -7,7 +7,7 @@
   - `mute` is now `bell-off`
   - `notification` prefixes are now `bell`
   - `terminal` is now `terminal-prompt`
-- Updated:
+- Updated
   - `battery`, `battery-fill`, `battery-bolt`
   - `bell-off`
   - `bolt-stars`
