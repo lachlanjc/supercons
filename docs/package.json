@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next"
   },
