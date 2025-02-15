@@ -79,7 +79,7 @@ const Docs = () => {
           Tap to copy an icon name.
           <br />
           Package, site, & most icons by{' '}
-          <a href="https://lachlanjc.com">@lachlanjc</a>, 2021.
+          <a href="https://lachlanjc.com">@lachlanjc</a>.
           <br />
           Credit to <a href="https://bryn.io">@superbryntendo</a> for initial
           group of icons.
