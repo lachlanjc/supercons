@@ -2,7 +2,7 @@
 !dist
 !src
 !package.json
-!pnpm-lock.yaml
+!bun.lock
 !README.md
 !LICENSE
 !tsconfig.json

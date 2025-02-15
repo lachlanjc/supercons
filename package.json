@@ -14,7 +14,6 @@
   ],
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
-    "build:components": "node scripts/generate-components.mjs",
     "build:svg": "node scripts/generate-svg.mjs",
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react"
@@ -43,5 +42,8 @@
     "arrowParens": "avoid",
     "printWidth": 80,
     "semi": false
+  },
+  "dependencies": {
+    "supercons": "^0.1.0"
   }
 }
