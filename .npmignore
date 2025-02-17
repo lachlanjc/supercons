@@ -1,5 +1,4 @@
 .vercel/
-dist/svg/
 docs/
 scripts/
 .vercelignore

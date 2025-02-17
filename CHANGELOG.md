@@ -1,3 +1,16 @@
+## v0.1.5
+
+- Began publishing SVGs to npm in `dist/svg/icon-name.svg`
+- Updated
+  - `facebook-fill` is now centered like `facebook`
+- Removed
+  - `checklist` was duplicated be `list-checked`
+  - `idea` was duplicated by `lightbulb`
+- Added
+  - `search-fill`
+  - `search-magic`, `search-magic-fill`
+  - `typography`
+
 ## v0.1.4
 
 - Updated

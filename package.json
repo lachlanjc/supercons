@@ -1,6 +1,6 @@
 {
   "name": "supercons",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A friendly React iconset",
   "type": "module",
   "sideEffects": false,
