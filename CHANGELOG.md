@@ -1,4 +1,27 @@
-# v0.1.0
+## v0.1.4
+
+- Updated
+  - `payment-transfer` now has a rounded arrow
+  - `phone`, `phone-bolt`, and `phone-vibrate` resemble iPhone post-notch
+- Added
+  - `apps`
+  - `badge-check`, `badge-check-fill`
+  - `brightness-keyboard`, `brightness-keyboard-low`
+  - `brightness`, `brightness-low`, `brightness-fill`, `brightness-low-fill`
+  - `circle-check`, `circle-check-fill`
+  - `extend-horizontal`, `extend-vertical`
+  - `lightbulb`, `lightbulb-low`, `lightbulb-high`, `lightbulb-off`, `lightbulb-fill`, `lightbulb-low-fill`, `lightbulb-high-fill`, `lightbulb-off-fill`
+  - `list-bulleted`, `list-magic`, `list-unchecked`, `list-checked`, `list-checked-mixed`
+  - `phone-fill`
+  - `privacy`
+  - `sun`, `sun-fill`
+  - `sunglasses`
+  - `transfer-horizontal`, `transfer-vertical`
+  - `transfers-horizontal`, `transfers-vertical`
+- Removed
+  - `bed`
+
+## v0.1.0
 
 - Renamed
   - `bolt` is now `bolt-stars`
@@ -16,7 +39,7 @@
   - `message-simple-new`
   - `transactions`
   - `transit`
-- New
+- Added
   - `app-store`, `app-store-fill`
   - `battery-bolt-fill`, `battery-bolt-half-fill`
   - `bed`
