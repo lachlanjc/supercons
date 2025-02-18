@@ -1,3 +1,37 @@
+## v0.1.7
+
+- Updated
+  - Filled bolt on `battery-bolt` icons
+  - Rounded corners on `diagram-2`, `diagram-3`
+- Added
+  - `3d-rotate`
+  - `angle`
+  - `archive`
+  - `badge`, `badge-fill`, `badge-award`
+  - `calculator`, `calculator-fill`
+  - `captions`, `captions-fill`
+  - `car`, `car-fill`
+  - `components`, `components-fill`
+  - `cpu`
+  - `dashboard-meter`
+  - `form`, `form-clear`
+  - `glasses`, `glasses-fill`
+  - `houseplant`
+  - `input-edit`, `input-draw`
+  - `laptop`, `laptop-fill`
+  - `message-conversation`
+  - `message-exclamation`, `message-exclamation-fill`
+  - `mic`, `mic-fill`, `mic-off`, `mic-off-fill`
+  - `moon-star`, `moon-star-fill`
+  - `nut`
+  - `party`
+  - `qr-code`
+  - `solar`
+  - `tablet`, `tablet-draw`
+  - `timer`
+  - `vr`, `vr-fill`
+  - `wind`
+
 ## v0.1.6
 
 - Updated
@@ -23,7 +57,7 @@
   - `facebook-fill` is now centered like `facebook`
 - Removed
   - `checklist` was duplicated be `list-checked`
-  - `idea` was duplicated by `lightbulb`
+  - `idea` was duplicated by `lightbulb-high`
 - Added
   - `search-fill`
   - `search-magic`, `search-magic-fill`

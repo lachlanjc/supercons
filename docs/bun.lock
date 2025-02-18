@@ -8,7 +8,7 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-hot-toast": "^2.4.0",
-        "supercons": "^0.1.6",
+        "supercons": "^0.1.7",
         "use-clipboard-copy": "^0.2.0",
       },
     },
@@ -78,7 +78,7 @@
 
     "styled-jsx": ["styled-jsx@5.1.1", "", { "dependencies": { "client-only": "0.0.1" }, "peerDependencies": { "react": ">= 16.8.0 || 17.x.x || ^18.0.0-0" } }, "sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw=="],
 
-    "supercons": ["supercons@0.1.6", "", { "dependencies": { "supercons": "^0.1.0" }, "peerDependencies": { "react": "^16.12.0 || ^17.0.1 || ^18.2.0 || ^19.0.0" } }, "sha512-7zQDjHe0izX0Llr8uOGO1D74FuoupGRNAZo20bCNCn4lRLvPxdlLZ+lCbbG/AloFnF23/4AByudS4IYcwiI/Jw=="],
+    "supercons": ["supercons@0.1.7", "", { "dependencies": { "supercons": "^0.1.0" }, "peerDependencies": { "react": "^16.12.0 || ^17.0.1 || ^18.2.0 || ^19.0.0" } }, "sha512-YPT9vbkLRmcU9UpQxT3ooFCZy9h9yRO6nRoShm79KHNuHGkHOfMpdgBTyo/eMq2/HKrXrpmjx5drfBm3HkWqOg=="],
 
     "tslib": ["tslib@2.8.1", "", {}, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
 
