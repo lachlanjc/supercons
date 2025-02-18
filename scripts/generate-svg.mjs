@@ -14,3 +14,5 @@ glyphNames.forEach(glyphName => {
   // save to file
   fs.writeFileSync(`./dist/svg/${glyphName}.svg`, svg)
 })
+
+console.log(`Generated ${glyphNames.length} SVG files`)

@@ -1,3 +1,21 @@
+## v0.1.6
+
+- Updated
+  - `pause-circle`, `pause-circle-fill`
+- Removed
+  - `brightness` and `brightness-low` were duplicated by `sun` and `sun-fill`
+- Added
+  - `airdrop`
+  - `battery-exclamation`
+  - `cloud-sun`, `cloud-sun-fill`
+  - `print`
+  - `route`
+  - `stopwatch`, `stopwatch-fill`
+  - `sunrise`, `sunrise-fill`
+  - `switch-on`, `switch-off`, `switches`, `switches-fill`, `switches-mixed`
+  - `trophy`, `trophy-fill`
+  - `wine-glass`, `wine-glass-fill`
+
 ## v0.1.5
 
 - Began publishing SVGs to npm in `dist/svg/icon-name.svg`
