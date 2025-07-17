@@ -55,19 +55,20 @@ $ cd supercons
 2. Install dependencies.
 
 ```sh
-$ yarn
+$ bun
 ```
 
 4. Run docs locally.
 
 ```sh
-yarn run dev
+$ bun run dev
 ```
 
 4. After making changes to icons, build the library.
 
 ```sh
-yarn run prepare
+$ bun run build
+$ bun run build:svg
 ```
 
 ## To-do list
