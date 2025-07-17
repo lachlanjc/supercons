@@ -58,17 +58,18 @@ $ cd supercons
 $ bun
 ```
 
-4. Run docs locally.
-
-```sh
-$ bun run dev
-```
-
-4. After making changes to icons, build the library.
+3. After making changes to icons, build the library.
 
 ```sh
 $ bun run build
 $ bun run build:svg
+```
+
+4. Run docs locally.
+
+```sh
+$ cd docs
+$ bun run dev
 ```
 
 ## To-do list
@@ -76,5 +77,5 @@ $ bun run build:svg
 - [x] Drop PropTypes for TypeScript (thanks [@anirudhb](https://github.com/anirudhb)!)
 - [x] Use [Microbundle](https://github.com/developit/microbundle) for build
 - [ ] Allow tree-shaking by programatically generating a component for each icon
-- [ ] Forward refs (with proper TypeScript support)
+- [x] Forward refs (with proper TypeScript support)
 - [x] Add more icons

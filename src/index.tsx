@@ -2,19 +2,26 @@ import React from 'react'
 import { glyphs, type GlyphName } from './glyphs'
 export { glyphNames } from './glyphs'
 
-interface Props {
+/**
+ * Icon component renders an SVG with the given glyph.
+ * Supports forwarding refs to the underlying SVG element.
+ */
+export interface IconProps extends React.SVGProps<SVGSVGElement> {
+  /** Name of the glyph to render */
   glyph?: GlyphName
+  /** Width and height of the icon (in px) */
   size?: number
+  /** Component or element type to render (defaults to 'svg') */
+  as?: React.ElementType
 }
 
-function Icon<T extends React.ElementType = 'svg'>({
-  as: Component = 'svg',
-  size = 32,
-  glyph = 'like',
-  ...props
-}: Props & React.ComponentPropsWithoutRef<T>) {
-  return (
+const Icon = React.forwardRef<SVGSVGElement, IconProps>(
+  (
+    { as: Component = 'svg', size = 32, glyph = 'like', ...props },
+    ref
+  ) => (
     <Component
+      ref={ref}
       fillRule="evenodd"
       clipRule="evenodd"
       strokeLinejoin="round"
@@ -30,6 +37,6 @@ function Icon<T extends React.ElementType = 'svg'>({
       {...props}
     />
   )
-}
+)
 
 export default Icon
