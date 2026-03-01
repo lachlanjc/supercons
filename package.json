@@ -1,20 +1,34 @@
 {
   "name": "supercons",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "A friendly React iconset",
   "type": "module",
   "sideEffects": false,
   "source": "./src/index.tsx",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./*": {
+      "types": "./dist/components/*.d.ts",
+      "import": "./dist/components/*.js",
+      "require": "./dist/components/*.cjs"
+    }
+  },
   "keywords": [
     "icon",
     "react"
   ],
   "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
   "scripts": {
-    "build:svg": "node scripts/generate-svg.mjs",
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build:components:src": "bun run scripts/generate-components.mjs",
+    "build:components": "tsup src/components/*.tsx --format esm,cjs --dts --external react --out-dir dist/components",
+    "build:svg": "bun run scripts/generate-svg.mjs",
+    "build": "bun run build:components:src && bun run build:components && bun run build:svg && tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react"
   },
   "peerDependencies": {

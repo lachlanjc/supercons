@@ -15,16 +15,31 @@ Predecessor projects: [spectrum-icons](https://github.com/lachlanjc/spectrum-ico
 ## Usage
 
 ```sh
-yarn add supercons
+bun i supercons
 # npm i supercons
 ```
+
+```js
+import React from 'react'
+import Like from 'supercons/like'
+import Cloud from 'supercons/cloud'
+
+export default () => (
+  <div style={{ color: 'magenta' }}>
+    <Like size={128} />
+    <Cloud size={32} />
+  </div>
+)
+```
+
+or if you want to import all icons at once (worse for bundle size):
 
 ```js
 import React from 'react'
 import Icon from 'supercons'
 
 export default () => (
-  <div style={{ color: 'magenta' }}>
+  <div style={{ color: 'cyan' }}>
     <Icon glyph="like" size={128} />
     <Icon glyph="cloud" size={32} />
   </div>

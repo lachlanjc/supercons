@@ -1,3 +1,13 @@
+## v0.2.0
+
+Added individual component exports to reduce bundle size when importing from `supercons`:
+
+```jsx
+import Cloud from 'supercons/cloud'
+
+<Cloud size={32} />
+```
+
 ## v0.1.7
 
 - Updated
