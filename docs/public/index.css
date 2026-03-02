@@ -86,11 +86,11 @@ nav a:hover,
 nav a:focus {
   transform: rotate(-2deg) scale(1.25);
 }
-nav a:hover :global(svg),
-nav a:focus :global(svg) {
+nav a:hover svg,
+nav a:focus svg {
   transform: rotate(180deg);
 }
-nav a :global(svg) {
+nav a svg {
   margin-right: 0.5rem;
   transition: transform 0.5s linear;
 }
@@ -134,12 +134,12 @@ p {
   word-break: break-word;
   word-wrap: wrap;
 }
-article :global(svg) {
+article svg {
   transition: 0.125s ease-out;
   transition-property: fill, transform;
   transform-origin: center bottom;
 }
-article :global(svg:hover) {
+article svg:hover {
   fill: #ff9300;
   transform: scale(2);
 }

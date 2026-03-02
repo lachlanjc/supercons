@@ -1,6 +1,8 @@
 'use client'
 import { useRef, useState } from 'react'
 import Icon, { glyphNames } from 'supercons'
+import Sam from 'supercons/sam'
+import Github from 'supercons/github'
 import BG from '../components/bg'
 import useFocusable from '../components/use-focusable'
 import { useClipboard } from 'use-clipboard-copy'
@@ -38,11 +40,11 @@ const Docs = () => {
           <h2>A friendly, open source React iconset</h2>
           <nav>
             <a href="https://github.com/lachlanjc/supercons">
-              <Icon glyph="github" size={32} />
+              <Github size={32} />
               GitHub
             </a>
             <a href="https://npmjs.com/package/supercons">
-              <Icon glyph="sam" size={32} />
+              <Sam size={32} />
               npm
             </a>
           </nav>
