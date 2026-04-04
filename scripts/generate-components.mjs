@@ -181,7 +181,9 @@ function parseGlyphEntries(source) {
     } else {
       const match = /^[A-Za-z_$][A-Za-z0-9_$]*/.exec(body.slice(i))
       if (!match) {
-        throw new Error(`Could not parse glyph key near: ${body.slice(i, i + 30)}`)
+        throw new Error(
+          `Could not parse glyph key near: ${body.slice(i, i + 30)}`,
+        )
       }
       glyphName = match[0]
       i += glyphName.length
@@ -213,7 +215,7 @@ let generated = 0
 
 for (const { glyphName, value } of parseGlyphEntries(glyphSource)) {
   const componentName = toComponentName(glyphName)
-  const componentPath = path.join(componentsDir, `${componentName}.tsx`)
+  const componentPath = path.join(componentsDir, `${glyphName}.tsx`)
 
   const componentSource = `import React from 'react'
 

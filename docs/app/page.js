@@ -1,8 +1,8 @@
 'use client'
 import { useRef, useState } from 'react'
 import Icon, { glyphNames } from 'supercons'
-import Sam from 'supercons/sam'
-import Github from 'supercons/github'
+import Sam from 'supercons/Sam'
+import Github from 'supercons/Github'
 import BG from '../components/bg'
 import useFocusable from '../components/use-focusable'
 import { useClipboard } from 'use-clipboard-copy'
@@ -72,7 +72,7 @@ const Docs = () => {
                   size={48}
                   onClick={() => copyToClipboard(key)}
                 />
-                <p children={key} />
+                <p>{key}</p>
               </div>
             ))}
         </article>

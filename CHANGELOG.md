@@ -1,11 +1,23 @@
+## v0.3.0
+
+Switched the React component names to match the SVGs as kebab case, e.g.
+
+```jsx
+import QrCode from 'supercons/qr-code'
+import QrCodeSvg from 'supercons/svg/qr-code'
+
+<QrCode size={32} />
+<img src={qrCodeSvg} />
+```
+
 ## v0.2.0
 
 Added individual component exports to reduce bundle size when importing from `supercons`:
 
 ```jsx
-import Cloud from 'supercons/cloud'
+import QrCode from 'supercons/QrCode'
 
-<Cloud size={32} />
+<QrCode size={32} />
 ```
 
 ## v0.1.7
