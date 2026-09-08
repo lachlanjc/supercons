@@ -68,11 +68,13 @@ const Docs = () => {
         </article>
         <Toaster position="bottom-right" />
         <footer>
-          Tap to copy an icon name.
-          <br />
-          Package, site, & most icons by <a href="https://lachlanjc.com">@lachlanjc</a>.
-          <br />
-          Credit to <a href="https://bryn.io">@superbryntendo</a> for initial group of icons.
+          <p>
+            Tap to copy an icon name.
+            <br />
+            Package, site, & most icons by <a href="https://lachlanjc.com">@lachlanjc</a>.
+            <br />
+            Credit to <a href="https://bryn.io">@superbryntendo</a> for initial group of icons.
+          </p>
         </footer>
       </main>
     </>
