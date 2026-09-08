@@ -48,7 +48,7 @@ const Docs = () => {
           <input
             type="search"
             autoCapitalize="false"
-            onChange={e => setSearch(e.target.value)}
+            onChange={(e) => setSearch(e.target.value)}
             value={search}
             placeholder="Filter… / to focus"
             aria-label="Filter icons"
@@ -58,17 +58,10 @@ const Docs = () => {
         <article>
           {glyphNames
             .sort()
-            .filter(n =>
-              search !== '' ? n.includes(search.toLowerCase()) : true,
-            )
-            .map(key => (
+            .filter((n) => (search !== '' ? n.includes(search.toLowerCase()) : true))
+            .map((key) => (
               <div key={key} id={key}>
-                <Icon
-                  glyph={key}
-                  title={key}
-                  size={48}
-                  onClick={() => copyToClipboard(key)}
-                />
+                <Icon glyph={key} title={key} size={48} onClick={() => copyToClipboard(key)} />
                 <span children={key} />
               </div>
             ))}
@@ -77,11 +70,9 @@ const Docs = () => {
         <footer>
           Tap to copy an icon name.
           <br />
-          Package, site, & most icons by{' '}
-          <a href="https://lachlanjc.com">@lachlanjc</a>.
+          Package, site, & most icons by <a href="https://lachlanjc.com">@lachlanjc</a>.
           <br />
-          Credit to <a href="https://bryn.io">@superbryntendo</a> for initial
-          group of icons.
+          Credit to <a href="https://bryn.io">@superbryntendo</a> for initial group of icons.
         </footer>
       </main>
     </>

@@ -13,7 +13,7 @@ function toComponentName(glyphName) {
   const pascalCase = glyphName
     .split(/[^a-zA-Z0-9]+/)
     .filter(Boolean)
-    .map(part => part[0].toUpperCase() + part.slice(1))
+    .map((part) => part[0].toUpperCase() + part.slice(1))
     .join('')
 
   if (!pascalCase) {
@@ -27,7 +27,7 @@ function indent(text, spaces) {
   const prefix = ' '.repeat(spaces)
   return text
     .split('\n')
-    .map(line => `${prefix}${line}`)
+    .map((line) => `${prefix}${line}`)
     .join('\n')
 }
 
@@ -44,10 +44,7 @@ function skipIgnored(source, index) {
 
     if (source[i] === '/' && source[i + 1] === '*') {
       i += 2
-      while (
-        i + 1 < source.length &&
-        !(source[i] === '*' && source[i + 1] === '/')
-      ) {
+      while (i + 1 < source.length && !(source[i] === '*' && source[i + 1] === '/')) {
         i += 1
       }
       i += 2
@@ -158,9 +155,7 @@ function stripOuterParens(expression) {
   const text = expression.trim()
   if (!text.startsWith('(') || !text.endsWith(')')) return text
 
-  return findMatching(text, 0, '(', ')') === text.length - 1
-    ? text.slice(1, -1).trim()
-    : text
+  return findMatching(text, 0, '(', ')') === text.length - 1 ? text.slice(1, -1).trim() : text
 }
 
 function parseGlyphEntries(source) {
@@ -251,6 +246,4 @@ export default ${componentName}
   generated += 1
 }
 
-console.log(
-  `Generated ${generated} components in ${path.relative(rootDir, componentsDir)}`,
-)
+console.log(`Generated ${generated} components in ${path.relative(rootDir, componentsDir)}`)

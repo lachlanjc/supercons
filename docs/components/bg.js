@@ -5,11 +5,7 @@ const BG = () => (
   <div aria-hidden className={styles.gradientWrapper}>
     <div className={styles.gradientOverlay} />
     <div className={styles.gradient}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 1024"
-        fill="none"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" fill="none">
         <circle cx={-164} cy={-136} r={677} fill="#622aff" />
         <circle cx={1658} cy={-104} r={677} fill="#e635ce" />
         <circle cx={588} cy={579} r={677} fill="url(#paint0_linear)" />

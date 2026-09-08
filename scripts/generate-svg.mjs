@@ -7,7 +7,7 @@ import fs from 'node:fs'
 fs.mkdirSync('./dist/svg', { recursive: true })
 
 // render Icon component with every glyphName to SVG file
-glyphNames.forEach(glyphName => {
+glyphNames.forEach((glyphName) => {
   const svg = renderToStaticMarkup(React.createElement(Icon, { glyph: glyphName }))
 
   // save to file

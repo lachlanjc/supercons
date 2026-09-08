@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
-const useFocusable = input => {
-  const focusInput = e => {
+const useFocusable = (input) => {
+  const focusInput = (e) => {
     if (e.key === '/' && input) input.current.focus()
   }
   useEffect(() => {

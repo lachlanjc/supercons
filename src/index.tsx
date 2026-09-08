@@ -16,10 +16,7 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Icon = React.forwardRef<SVGSVGElement, IconProps>(
-  (
-    { as: Component = 'svg', size = 32, glyph = 'like', ...props },
-    ref
-  ) => (
+  ({ as: Component = 'svg', size = 32, glyph = 'like', ...props }, ref) => (
     <Component
       ref={ref}
       fillRule="evenodd"
@@ -36,7 +33,7 @@ const Icon = React.forwardRef<SVGSVGElement, IconProps>(
       children={glyphs[glyph as keyof typeof glyphs]}
       {...props}
     />
-  )
+  ),
 )
 
 export default Icon
