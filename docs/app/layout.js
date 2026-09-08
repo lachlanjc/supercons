@@ -1,8 +1,11 @@
+import { gtMaru } from './fonts'
+import '../public/index.css'
+
 function Layout({ children }) {
   return (
-    <html lang="en-US">
+    <html lang="en-US" className={gtMaru.variable}>
       <head />
-      <body>{children}</body>
+      <body className={gtMaru.className}>{children}</body>
     </html>
   )
 }

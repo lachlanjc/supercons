@@ -1,13 +1,10 @@
 'use client'
 import { useRef, useState } from 'react'
 import Icon, { glyphNames } from 'supercons'
-import Sam from 'supercons/sam'
-import Github from 'supercons/github'
 import BG from '../components/bg'
 import useFocusable from '../components/use-focusable'
 import { useClipboard } from 'use-clipboard-copy'
 import toast, { Toaster } from 'react-hot-toast'
-import '../public/index.css'
 
 const Docs = () => {
   const input = useRef(null)
@@ -37,14 +34,14 @@ const Docs = () => {
       <main>
         <header>
           <h1>Supercons</h1>
-          <h2>A friendly, open source React iconset</h2>
+          <p>A friendly, open source React iconset</p>
           <nav>
             <a href="https://github.com/lachlanjc/supercons">
-              <Github size={32} />
+              <Icon glyph="github" size={32} />
               GitHub
             </a>
             <a href="https://npmjs.com/package/supercons">
-              <Sam size={32} />
+              <Icon glyph="sam" size={32} />
               npm
             </a>
           </nav>
@@ -72,7 +69,7 @@ const Docs = () => {
                   size={48}
                   onClick={() => copyToClipboard(key)}
                 />
-                <p children={key} />
+                <span children={key} />
               </div>
             ))}
         </article>

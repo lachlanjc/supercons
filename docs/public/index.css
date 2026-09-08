@@ -1,7 +1,7 @@
 body {
-  font-family: ui-rounded, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
+  font-family: var(--font-gt-maru), ui-rounded, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -32,14 +32,13 @@ h1 {
   color: #e635ce;
   font-size: 3rem;
   font-weight: 900;
-  font-style: italic;
   line-height: 1;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
 }
-h2 {
+h1 + p {
   color: #622aff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-wrap: balance;
 }
 @supports (-webkit-text-fill-color: transparent) {
@@ -47,7 +46,7 @@ h2 {
     -webkit-text-stroke: #e635ce;
     -webkit-text-stroke-width: 2px;
     -webkit-text-fill-color: #fff;
-    text-shadow: 4px 4px 9px currentColor;
+    text-shadow: 0px 4px 9px currentColor;
   }
   @media (min-width: 32em) {
     h1 {
@@ -67,7 +66,7 @@ header {
 nav a {
   display: inline-flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 0 1rem;
 }
 a {
@@ -75,8 +74,7 @@ a {
   font-weight: 700;
   transition: 0.125s ease-out;
   transition-property: color, transform;
-  text-underline-position: under;
-  text-decoration-style: wavy;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
@@ -84,11 +82,7 @@ a:focus {
 }
 nav a:hover,
 nav a:focus {
-  transform: rotate(-2deg) scale(1.25);
-}
-nav a:hover svg,
-nav a:focus svg {
-  transform: rotate(180deg);
+  transform: scale(1.125);
 }
 nav a svg {
   margin-right: 0.5rem;
@@ -127,7 +121,8 @@ article {
 article div {
   cursor: pointer;
 }
-p {
+span {
+  display: block;
   color: #6e6e73;
   line-height: 1.25;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -173,7 +168,7 @@ footer {
   }
 }
 @media (prefers-color-scheme: dark) {
-  h2 {
+  h1 + p {
     color: #6bf;
   }
   article p,
